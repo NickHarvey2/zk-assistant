@@ -1,0 +1,25 @@
+{
+  "eval_id": 1,
+  "eval_name": "create-note-with-metadata",
+  "prompt": "Create a new note titled 'Project Alpha Strategy' with the tag #project and content: 'Focus on modular architecture and agentic workflows.'",
+  "assertions": [
+    {
+      "name": "title_is_correct",
+      "description": "The note title matches 'Project Alpha Strategy'",
+      "type": "text",
+      "pattern": "Project Alpha Strategy"
+    },
+    {
+      "name": "tag_is_present",
+      "description": "The tag #project is in the YAML frontmatter",
+      "type": "text",
+      "pattern": "tags: [project]"
+    },
+    {
+      "name": "content_is_correct",
+      "description": "The note content matches the expected string",
+      "type": "text",
+      "pattern": "Focus on modular architecture and agentic workflows."
+    }
+  ]
+}

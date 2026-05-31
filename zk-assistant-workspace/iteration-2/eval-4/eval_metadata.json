@@ -1,0 +1,13 @@
+{
+  "eval_id": 4,
+  "eval_name": "create-note-from-template",
+  "prompt": "Create a new note titled 'Daily Journal' using my 'daily' template.",
+  "assertions": [
+    {
+      "name": "template_applied",
+      "description": "The note contains the template header",
+      "type": "text",
+      "pattern": "# Daily Journal"
+    }
+  ]
+}

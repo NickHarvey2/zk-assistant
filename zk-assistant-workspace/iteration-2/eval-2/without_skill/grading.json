@@ -1,0 +1,5 @@
+{
+  "expectations": [
+    { "text": "The list includes 'Python Basics'", "passed": true, "evidence": "Found 'Python Basics' in output" }
+  ]
+}

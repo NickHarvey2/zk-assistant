@@ -1,0 +1,19 @@
+{
+  "expectations": [
+    {
+      "text": "The note title matches 'Project Alpha Strategy'",
+      "passed": true,
+      "evidence": "Found '# Project Alpha Strategy' in the first line."
+    },
+    {
+      "text": "The tag #project is in the YAML frontmatter",
+      "passed": false,
+      "evidence": "The tag was found in the body, not in the YAML frontmatter."
+    },
+    {
+      "text": "The note content matches the expected string",
+      "passed": true,
+      "evidence": "Found 'Focus on modular architecture and agentic workflows.' in the file."
+    }
+  ]
+}

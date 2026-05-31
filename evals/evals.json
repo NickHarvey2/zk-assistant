@@ -1,0 +1,87 @@
+{
+  "skill_name": "zk-assistant",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a new note titled 'Project Alpha Strategy' with the tag #project and content: 'Focus on modular architecture and agentic workflows.'",
+      "expected_output": "A new note is created with the correct title, tag in YAML frontmatter, and the provided content.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "title_is_correct",
+          "description": "The note title matches 'Project Alpha Strategy'",
+          "type": "text",
+          "pattern": "Project Alpha Strategy"
+        },
+        {
+          "name": "tag_is_present",
+          "description": "The tag #project is in the YAML frontmatter",
+          "type": "text",
+          "pattern": "tags: [project]"
+        },
+        {
+          "name": "content_is_correct",
+          "description": "The note content matches the expected string",
+          "type": "text",
+          "pattern": "Focus on modular architecture and agentic workflows."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Find all my notes that mention 'Python' and then list their titles.",
+      "expected_output": "The agent uses `zk list --match 'Python'` and presents the titles of the matching notes.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "python_notes_listed",
+          "description": "The list includes 'Python Basics'",
+          "type": "text",
+          "pattern": "Python Basics"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Show me all notes that are linked to the note '2024-05-31-meeting'.",
+      "expected_output": "The agent uses `zk list --link-to '2024-05-31-meeting'` to find backlinks.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "backlink_found",
+          "description": "Finds the note linked to the meeting",
+          "type": "text",
+          "pattern": "Project Alpha"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Create a new note titled 'Daily Journal' using my 'daily' template.",
+      "expected_output": "The agent uses `zk new --title 'Daily Journal' --template 'daily'` (or asks if template not specified) to create the note.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "template_applied",
+          "description": "The note contains the template header",
+          "type": "text",
+          "pattern": "# Daily Journal"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Search for notes about 'recipes' in this directory.",
+      "expected_output": "If no .zk directory is present, the agent should inform the user it is not in a zk repository and not use zk.",
+      "files": [],
+      "assertions": [
+        {
+          "name": "no_zk_error",
+          "description": "The agent doesn't use zk if not in a repo",
+          "type": "text",
+          "pattern": "No notes about 'recipes' were found"
+        }
+      ]
+    }
+  ]
+}

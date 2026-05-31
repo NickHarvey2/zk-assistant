@@ -1,0 +1,13 @@
+{
+  "eval_id": 5,
+  "eval_name": "not-in-zk-repo",
+  "prompt": "Search for notes about 'recipes' in this directory.",
+  "assertions": [
+    {
+      "name": "no_zk_error",
+      "description": "The agent doesn't use zk if not in a repo",
+      "type": "text",
+      "pattern": "No notes about 'recipes' were found"
+    }
+  ]
+}

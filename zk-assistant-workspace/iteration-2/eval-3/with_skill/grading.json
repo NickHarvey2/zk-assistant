@@ -1,0 +1,5 @@
+{
+  "expectations": [
+    { "text": "Finds the note linked to the meeting", "passed": true, "evidence": "Found 'Project Alpha' in output" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 2,
+  "eval_name": "search-python-notes",
+  "prompt": "Find all my notes that mention 'Python' and then list their titles.",
+  "assertions": [
+    {
+      "name": "python_notes_listed",
+      "description": "The list includes 'Python Basics'",
+      "type": "text",
+      "pattern": "Python Basics"
+    }
+  ]
+}

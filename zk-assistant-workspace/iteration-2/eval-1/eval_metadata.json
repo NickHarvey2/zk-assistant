@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "create-note-with-metadata",
+  "prompt": "Create a new note titled 'Project Alpha Strategy' with the tag #project and content: 'Focus on modular architecture and agentic workflows.'",
+  "assertions": []
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "query": "hey, i just had a great idea for the project, can you jot it down in a new note called 'brainstorming session' with the tag #ideas?",
+    "should_trigger": true
+  },
+  {
+    "query": "i'm looking for that note where i talked about the new python library we're using, can you find it for me?",
+    "should_trigger": true
+  },
+  {
+    "query": "can you create a new daily journal entry for today using the 'daily' template?",
+    "should_trigger": true
+  },
+  {
+    "query": "i need to see which notes are connected to my 'client-onboarding' note.",
+    "should_trigger": true
+  },
+  {
+    "query": "can you add the tag #important to the note titled 'annual-review'?",
+    "should_trigger": true
+  },
+  {
+    "query": "is there a note about 'machine learning' in my notebook? i can't remember if i wrote it down.",
+    "should_trigger": true
+  },
+  {
+    "query": "i want to start a new note about 'quantum computing' but i'm not sure if i already have one.",
+    "should_trigger": true
+  },
+  {
+    "query": "show me all the notes i've modified in the last week.",
+    "should_trigger": true
+  },
+  {
+    "query": "i want to add an alias 'AI' to my 'Artificial Intelligence' note.",
+    "should_trigger": true
+  },
+  {
+    "query": "can you find all notes that are linked to the 'meeting-notes' file?",
+    "should_trigger": true
+  },
+  {
+    "query": "can you write a python script that reads a csv and calculates the average?",
+    "should_trigger": false
+  },
+  {
+    "query": "can you create a new markdown file called 'meeting_notes.md' in this folder?",
+    "should_trigger": false
+  },
+  {
+    "query": "search all my files for the word 'meeting'.",
+    "should_trigger": false
+  },
+  {
+    "query": "list all the files in my current directory.",
+    "should_trigger": false
+  },
+  {
+    "query": "i need to search my github repositories for 'python'.",
+    "should_trigger": false
+  },
+  {
+    "query": "how do i install docker on ubuntu?",
+    "should_trigger": false
+  },
+  {
+    "query": "find all the git commits from yesterday.",
+    "should_trigger": false
+  },
+  {
+    "query": "create a new folder named 'archive' and move these files into it.",
+    "should_trigger": false
+  },
+  {
+    "query": "what is the capital of Japan?",
+    "should_trigger": false
+  },
+  {
+    "query": "summarize this text: [text]",
+    "should_trigger": false
+  }
+]

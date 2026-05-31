@@ -1,0 +1,5 @@
+{
+  "expectations": [
+    { "text": "The note contains the template header", "passed": true, "evidence": "Found '# Daily Journal' in output" }
+  ]
+}

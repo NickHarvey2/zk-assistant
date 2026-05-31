@@ -1,0 +1,13 @@
+{
+  "eval_id": 3,
+  "eval_name": "explore-links-meeting",
+  "prompt": "Show me all notes that are linked to the note '2024-05-31-meeting'.",
+  "assertions": [
+    {
+      "name": "backlink_found",
+      "description": "Finds the note linked to the meeting",
+      "type": "text",
+      "pattern": "Project Alpha"
+    }
+  ]
+}

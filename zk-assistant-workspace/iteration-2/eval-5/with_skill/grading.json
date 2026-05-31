@@ -1,0 +1,5 @@
+{
+  "expectations": [
+    { "text": "The agent doesn't use zk if not in a repo", "passed": true, "evidence": "Found 'No notes about 'recipes' were found'" }
+  ]
+}
